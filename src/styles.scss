@@ -1,1 +1,59 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~ag-grid-community/dist/styles/ag-grid.css";
+@import "~ag-grid-community/dist/styles/ag-theme-balham.css";
+
+body {
+  height: 100vh !important;
+  margin: 0px !important;
+}
+
+.ag-grid-container {
+  height: 100vh;
+}
+
+.ag-cell {
+  border-left: 1px solid black !important;
+  border-bottom: 1px solid black !important;
+}
+
+.container {
+  width: 95px;
+  height: 30px;
+  position: relative;
+}
+
+.corner {
+  width: 0;
+  height: 0;
+  line-height: 7px;
+  border-right: 25px solid #3D4857;
+  border-left: 70px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+
+.corner span {
+  position: absolute;
+  width: 100px;
+  left: 38px;
+  text-align: center;
+  font-size: 7px;
+  /*   transform: rotate(45deg); */
+  display: block;
+  color: white;
+}
+
+.inner-div {
+  position: absolute;
+  text-align: center;
+  left: 0;
+  top: 0;
+  width: 95px;
+  height: 30px;
+  background-color: transparent;
+}
+
+.check-icon {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
